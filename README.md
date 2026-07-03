@@ -4,6 +4,8 @@
 > [!IMPORTANT]
 > **AI Notice:** This repository contains custom instructions for AI coding agents. Please read [`AGENTS.md`](./AGENTS.md) before making any changes.
 
+![TravelTip Demo Screenshot](./assets/screenshots/demo.png)
+
 TravelTip is a lightweight location bookmarking app that combines the Google Maps JavaScript API with vanilla ES modules, browser storage, and modern Web APIs. Click anywhere on the map to capture the exact geo information, enrich it with a friendly name and rating, and keep your favorite spots only a tap away.
 
 ## Highlights
@@ -33,7 +35,9 @@ travel-tip-starter/
 │       ├── map.service.js   # Google Maps init, markers, reverse geocoding, user clicks
 │       ├── async-storage.service.js # LocalStorage-based async facade
 │       └── util.service.js  # Helpers: ids, timers, colors, query params, haversine
-├── img/                     # Placeholder for future assets
+├── assets/                  # Media and graphical assets
+│   ├── images/              # Runtime images (e.g. user-loc.png)
+│   └── screenshots/         # Documentation and demo screenshots
 └── README.md
 ```
 

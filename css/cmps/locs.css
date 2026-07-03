@@ -42,7 +42,7 @@
 
 .btn-user-pos {
     background-color: var(--bg2);
-    background-image: url(../../img/user-loc.png);
+    background-image: url(../../assets/images/user-loc.png);
     background-size: cover;
     width: 2em;
     height: 2em;
