@@ -40,6 +40,7 @@ travel-tip-starter/
   ```powershell
   npm install
   ```
+  You can run `npm run check` at any time to validate the tracked JavaScript files and entrypoint asset references without a real API key.
 3. **Create your env file** from the template and set the Google Maps key:
   ```powershell
   copy .env.example .env
@@ -117,6 +118,10 @@ Data is seeded with three demo entries on first load and can be filtered, sorted
 - **Map fails to load**: Confirm the API key is valid, referrer restrictions are correct, and billing is enabled for the Maps project.
 - **Geolocation blocked**: The browser requires HTTPS (or localhost). Allow the permission prompt and retry the "My position" button.
 - **Clipboard/Web Share errors**: Some desktop browsers restrict these APIs to HTTPS contexts; run via `Live Server` or a secure host.
+
+## Validation
+- `npm run check`: validates tracked JavaScript syntax and confirms `index.html` references existing local assets.
+- GitHub Actions runs the same check on pushes to `main` and on pull requests without requiring secrets or generated runtime config.
 
 Happy mapping! 🚀
 

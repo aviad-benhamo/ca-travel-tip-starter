@@ -19,3 +19,8 @@ Versioning for tagged releases.
 - Aligned package metadata with the repository identity, switched the package
   license to MIT, added a Node runtime policy, and added a simple local
   `start` script.
+
+### Added
+
+- Added `npm run check` and a GitHub Actions workflow for lightweight static
+  validation that runs without private runtime configuration.
