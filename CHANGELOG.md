@@ -16,3 +16,6 @@ Versioning for tagged releases.
 
 - Documented Google Maps API key handling, referrer restriction requirements,
   and safe demo support boundaries in `README.md` and `SECURITY.md`.
+- Aligned package metadata with the repository identity, switched the package
+  license to MIT, added a Node runtime policy, and added a simple local
+  `start` script.

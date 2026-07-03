@@ -1,14 +1,25 @@
 {
-    "name": "travel-tip-starter",
-    "version": "1.0.0",
-    "description": "TravelTip is a lightweight location bookmarking app that combines the Google Maps JavaScript API with vanilla ES modules, browser storage, and modern Web APIs. Click anywhere on the map to capture the exact geo information, enrich it with a friendly name and rating, and keep your favorite spots only a tap away.",
-    "scripts": {
-        "build:config": "node scripts/generate-config.mjs"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^17.2.3"
-    }
+  "name": "ca-travel-tip-starter",
+  "version": "0.1.0",
+  "description": "TravelTip is a lightweight location bookmarking app that combines the Google Maps JavaScript API with vanilla ES modules, browser storage, and modern Web APIs. Click anywhere on the map to capture the exact geo information, enrich it with a friendly name and rating, and keep your favorite spots only a tap away.",
+  "scripts": {
+    "build:config": "node scripts/generate-config.mjs",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "coding-academy",
+    "vanilla-javascript",
+    "google-maps",
+    "geolocation",
+    "localstorage",
+    "travel"
+  ],
+  "author": "Aviad Benhamo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
 }

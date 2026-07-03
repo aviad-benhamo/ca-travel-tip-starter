@@ -35,27 +35,32 @@ travel-tip-starter/
 ```
 
 ## Getting Started
-1. **Install dependencies** (dotenv powers the env injection script):
+1. **Use the recommended Node runtime** from `.nvmrc` (major `24`) or another compatible Node `>=20`.
+2. **Install dependencies** (dotenv powers the env injection script):
   ```powershell
   npm install
   ```
-2. **Create your env file** from the template and set the Google Maps key:
+3. **Create your env file** from the template and set the Google Maps key:
   ```powershell
   copy .env.example .env
   # edit .env and set GOOGLE_MAPS_API_KEY
   ```
-3. **Generate the runtime config** so the browser module can read the key without committing it:
+4. **Generate the runtime config** so the browser module can read the key without committing it:
   ```powershell
   npm run build:config
   ```
   This writes `js/config.js` (gitignored) with `envConfig.googleMapsApiKey`.
   Never commit this generated file with a real key.
-4. **Serve the app** using any static server (ES modules require HTTP). For example:
+5. **Serve the app** using any static server (ES modules require HTTP). For example:
+  ```powershell
+  npm start
+  ```
+  Or, if you prefer, run:
   ```powershell
   npx serve .
   ```
-  Or launch via VS Code's Live Server extension.
-5. **Load the app** in the browser (default `http://localhost:3000`) and allow location access when prompted.
+  You can also launch via VS Code's Live Server extension.
+6. **Load the app** in the browser (default `http://localhost:3000`) and allow location access when prompted.
 
 ## Google Maps Key Policy
 - `.env` and generated `js/config.js` are local-only files and must remain untracked.
