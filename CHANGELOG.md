@@ -11,3 +11,8 @@ Versioning for tagged releases.
 
 - Added the required GRS baseline files: `LICENSE`, `.gitattributes`,
   `.editorconfig`, `SECURITY.md`, and `CHANGELOG.md`.
+
+### Changed
+
+- Documented Google Maps API key handling, referrer restriction requirements,
+  and safe demo support boundaries in `README.md` and `SECURITY.md`.

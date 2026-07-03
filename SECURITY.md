@@ -26,3 +26,20 @@ fix before any public disclosure.
 
 Do not commit API keys, `.env` files, generated runtime config with real keys,
 or other credentials to this repository.
+
+## Google Maps Browser Key Guidance
+
+This project injects the Google Maps API key into `js/config.js` for browser
+use during local or demo runs. That means the key is visible to the client by
+design and must be protected with Google Cloud configuration rather than by
+repository secrecy alone.
+
+Required safeguards for any public demo:
+
+- Keep `.env` and `js/config.js` untracked and out of commits
+- Use a dedicated browser key, not a broader development or owner key
+- Restrict the key with exact HTTP referrer rules for the intended demo origins
+- Enable only the Google Maps APIs that the demo actually needs
+
+If those restrictions are not in place, do not publish or promote a public
+demo that depends on the real key.

@@ -49,12 +49,26 @@ travel-tip-starter/
   npm run build:config
   ```
   This writes `js/config.js` (gitignored) with `envConfig.googleMapsApiKey`.
+  Never commit this generated file with a real key.
 4. **Serve the app** using any static server (ES modules require HTTP). For example:
   ```powershell
   npx serve .
   ```
   Or launch via VS Code's Live Server extension.
 5. **Load the app** in the browser (default `http://localhost:3000`) and allow location access when prompted.
+
+## Google Maps Key Policy
+- `.env` and generated `js/config.js` are local-only files and must remain untracked.
+- Google Maps browser keys are exposed to the client by design. Do not treat `js/config.js` as a secret store.
+- Never commit a real API key to the repository, screenshots, docs, issues, or pull requests.
+- Before any public demo, require Google Cloud HTTP referrer restrictions for the exact demo origins.
+- If referrer restrictions are not configured and verified, treat the project as a local-only demo.
+
+## Demo Support
+- Local-only demo: supported. Use a local `.env`, generate `js/config.js`, and serve the app from localhost.
+- Public demo with restricted browser key: supported only when the key is limited by strict HTTP referrer restrictions and only the required Maps APIs are enabled.
+- Public demo without restrictions: not supported.
+- Deferred demo: acceptable until a restricted browser key is prepared for the intended hosting domain.
 
 ## Usage
 1. Click anywhere on the map to open the dialog, name the spot, and set a rating.
