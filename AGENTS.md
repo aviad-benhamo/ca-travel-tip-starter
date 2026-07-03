@@ -129,15 +129,15 @@ This repository follows the GitHub Repository Standard (GRS). Use the GRS as the
 
 ## Repository-Specific Notes
 
-Customize this section for the repository.
-
-Recommended fields:
-
-- Project name:
-- Repository type/state:
-- Main architecture docs:
-- Main commands:
-- Test strategy:
-- Build or release process:
-- Deployment notes:
+- Project name: TravelTip
+- Repository type/state: Vanilla JavaScript / Static app (No build step)
+- Main architecture docs: Vanilla ES modules, browser storage, and Google Maps API. See README.md for Data Model and Core Modules.
+- Main commands: `npm install`, `npm run build:config` (to generate local runtime config), `npm start` (or `npx serve .`) to serve locally, `npm run check` for syntax validation.
+- Test strategy: Local validation via `npm run check`. Manual validation required for map behavior, browser storage, and UI flow.
+- Build or release process: No build step for production. Runtime config must be generated locally using `.env`.
+- Deployment notes: 
+  - **GitHub Pages/Demo precautions**: Public demo requires Google Cloud HTTP referrer restrictions for the Maps key. If no restrictions are configured, treat as a local-only demo.
 - Project-specific restrictions:
+  - **Google Maps configuration safety**: Never commit a real Google Maps API key to the repository.
+  - **Environment files**: Do not commit local environment files (`.env`) or generated local configs (`js/config.js`).
+  - **Branch/commit expectations**: Follow local-first commit policy. Do not push directly to `main`. Create dedicated issue branches from local `main`.

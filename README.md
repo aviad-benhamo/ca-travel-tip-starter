@@ -1,6 +1,9 @@
 
 # TravelTip
 
+> [!IMPORTANT]
+> **AI Notice:** This repository contains custom instructions for AI coding agents. Please read [`AGENTS.md`](./AGENTS.md) before making any changes.
+
 TravelTip is a lightweight location bookmarking app that combines the Google Maps JavaScript API with vanilla ES modules, browser storage, and modern Web APIs. Click anywhere on the map to capture the exact geo information, enrich it with a friendly name and rating, and keep your favorite spots only a tap away.
 
 ## Highlights
