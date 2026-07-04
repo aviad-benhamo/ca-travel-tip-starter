@@ -7,11 +7,6 @@ and this repository follows [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-
-- Restructured the `README.md` file to follow the GitHub Repository Standard (GRS) compliance.
-- Removed the tracked VS Code Live Server port setting and kept editor-local workspace settings out of version control.
-
 ## [0.1.0] - 2026-07-04
 
 ### Added
@@ -37,3 +32,5 @@ and this repository follows [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cleaned up `package.json` metadata (MIT license, node runtime policy, and local start scripts).
 - Enhanced layout styling for the locations list and components.
 - Refactored documentation in `README.md` and `SECURITY.md` for referrer restrictions and safe keys.
+- Restructured the `README.md` file to follow the GitHub Repository Standard (GRS) compliance.
+- Removed the tracked VS Code Live Server port setting and kept editor-local workspace settings out of version control.
