@@ -10,6 +10,7 @@ and this repository follows [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Restructured the `README.md` file to follow the GitHub Repository Standard (GRS) compliance.
+- Removed the tracked VS Code Live Server port setting and kept editor-local workspace settings out of version control.
 
 ## [0.1.0] - 2026-07-04
 
