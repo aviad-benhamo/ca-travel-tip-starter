@@ -152,6 +152,18 @@ npm run check
 ```
 GitHub actions executes these checks automatically on pull requests and pushes to `main`.
 
+### Manual QA Checklist
+After `npm run check` passes, verify the browser-only flows that are not covered by the static validation script:
+
+1. **Google Maps loading:** Start the app with a valid local `js/config.js` file and confirm the map renders without a blocked-script error.
+2. **Add location:** Click the map, confirm the add dialog opens with the clicked coordinates, save a new location, and verify it appears in the list and can be selected.
+3. **Edit location:** Edit an existing location name or rating and confirm the updated values appear in the list and selected-location panel.
+4. **Delete location:** Delete a location, confirm the browser confirmation dialog appears, and verify the location is removed from the list after approval.
+5. **localStorage persistence:** Refresh the page after adding or editing a location and confirm the saved data still appears.
+6. **Geolocation:** Use the current-location action and confirm the map pans to the browser-provided position and distance labels appear for saved locations.
+7. **Theme switching:** Change the theme color control and confirm the page background updates immediately.
+8. **Missing or invalid Google Maps API key:** Run the app without generating `js/config.js`, or with an invalid key, and confirm the map does not become usable. The page should remain available for inspection, and you should see the expected console warning or map initialization failure instead of a silent success state.
+
 ### Coding Standards
 - Write clean, modular ES6+ JavaScript.
 - Avoid introducing global variables to keep the global workspace namespace clean (except for `window.app` which serves controller mappings).
