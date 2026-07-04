@@ -7,6 +7,10 @@ and this repository follows [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Restructured the `README.md` file to follow the GitHub Repository Standard (GRS) compliance.
+
 ## [0.1.0] - 2026-07-04
 
 ### Added
